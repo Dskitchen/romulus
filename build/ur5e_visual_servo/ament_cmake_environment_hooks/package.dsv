@@ -1,0 +1,4 @@
+source;share/ur5e_visual_servo/local_setup.bash
+source;share/ur5e_visual_servo/local_setup.dsv
+source;share/ur5e_visual_servo/local_setup.sh
+source;share/ur5e_visual_servo/local_setup.zsh

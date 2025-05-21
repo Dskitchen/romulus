@@ -1,0 +1,17 @@
+/workspaces/isaac_ros-dev/ros_ws/install/cake_decorator/share/cake_decorator//urdf/romulus.urdf
+/workspaces/isaac_ros-dev/ros_ws/install/cake_decorator/share/cake_decorator//launch/cake_decorator.launch.py
+/workspaces/isaac_ros-dev/ros_ws/install/cake_decorator/share/ament_index/resource_index/package_run_dependencies/cake_decorator
+/workspaces/isaac_ros-dev/ros_ws/install/cake_decorator/share/ament_index/resource_index/parent_prefix_path/cake_decorator
+/workspaces/isaac_ros-dev/ros_ws/install/cake_decorator/share/cake_decorator/environment/ament_prefix_path.sh
+/workspaces/isaac_ros-dev/ros_ws/install/cake_decorator/share/cake_decorator/environment/ament_prefix_path.dsv
+/workspaces/isaac_ros-dev/ros_ws/install/cake_decorator/share/cake_decorator/environment/path.sh
+/workspaces/isaac_ros-dev/ros_ws/install/cake_decorator/share/cake_decorator/environment/path.dsv
+/workspaces/isaac_ros-dev/ros_ws/install/cake_decorator/share/cake_decorator/local_setup.bash
+/workspaces/isaac_ros-dev/ros_ws/install/cake_decorator/share/cake_decorator/local_setup.sh
+/workspaces/isaac_ros-dev/ros_ws/install/cake_decorator/share/cake_decorator/local_setup.zsh
+/workspaces/isaac_ros-dev/ros_ws/install/cake_decorator/share/cake_decorator/local_setup.dsv
+/workspaces/isaac_ros-dev/ros_ws/install/cake_decorator/share/cake_decorator/package.dsv
+/workspaces/isaac_ros-dev/ros_ws/install/cake_decorator/share/ament_index/resource_index/packages/cake_decorator
+/workspaces/isaac_ros-dev/ros_ws/install/cake_decorator/share/cake_decorator/cmake/cake_decoratorConfig.cmake
+/workspaces/isaac_ros-dev/ros_ws/install/cake_decorator/share/cake_decorator/cmake/cake_decoratorConfig-version.cmake
+/workspaces/isaac_ros-dev/ros_ws/install/cake_decorator/share/cake_decorator/package.xml

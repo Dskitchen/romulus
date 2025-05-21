@@ -1,0 +1,497 @@
+[0.067s] Invoking command in '/workspaces/isaac_ros-dev/ros_ws/build/zed_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /workspaces/isaac_ros-dev/ros_ws/build/zed_msgs -- -j12 -l12
+[0.271s] [ 12%] Built target zed_msgs__rosidl_generator_c
+[0.271s] [ 12%] Built target ament_cmake_python_symlink_zed_msgs
+[0.285s] [ 12%] Built target zed_msgs__cpp
+[0.373s] [ 40%] Built target zed_msgs__rosidl_typesupport_cpp
+[0.373s] [ 40%] Built target zed_msgs__rosidl_typesupport_fastrtps_c
+[0.374s] [ 48%] Built target zed_msgs__rosidl_typesupport_introspection_c
+[0.375s] [ 61%] Built target zed_msgs__rosidl_typesupport_introspection_cpp
+[0.375s] [ 73%] Built target zed_msgs__rosidl_typesupport_fastrtps_cpp
+[0.381s] [ 85%] Built target zed_msgs__rosidl_typesupport_c
+[0.424s] [ 85%] Built target zed_msgs
+[0.470s] [ 86%] Built target zed_msgs__py
+[0.534s] [ 97%] Built target zed_msgs__rosidl_generator_py
+[0.580s] [ 99%] Built target zed_msgs__rosidl_typesupport_fastrtps_c__pyext
+[0.580s] [ 99%] Built target zed_msgs__rosidl_typesupport_c__pyext
+[0.592s] [100%] Built target zed_msgs__rosidl_typesupport_introspection_c__pyext
+[1.062s] running egg_info
+[1.096s] writing zed_msgs.egg-info/PKG-INFO
+[1.096s] writing dependency_links to zed_msgs.egg-info/dependency_links.txt
+[1.096s] writing top-level names to zed_msgs.egg-info/top_level.txt
+[1.291s] ERROR setuptools_scm._file_finders.git listing git files failed - pretending there aren't any
+[1.510s] reading manifest file 'zed_msgs.egg-info/SOURCES.txt'
+[1.513s] writing manifest file 'zed_msgs.egg-info/SOURCES.txt'
+[1.656s] [100%] Built target ament_cmake_python_build_zed_msgs_egg
+[1.688s] Invoked command in '/workspaces/isaac_ros-dev/ros_ws/build/zed_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /workspaces/isaac_ros-dev/ros_ws/build/zed_msgs -- -j12 -l12
+[1.689s] Invoking command in '/workspaces/isaac_ros-dev/ros_ws/build/zed_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /workspaces/isaac_ros-dev/ros_ws/build/zed_msgs
+[1.703s] -- Install configuration: ""
+[1.704s] -- Execute custom install script
+[1.705s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/share/ament_index/resource_index/rosidl_interfaces/zed_msgs
+[1.708s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/bounding_box2_df.h
+[1.709s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/bounding_box2_di.h
+[1.710s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/bounding_box3_d.h
+[1.711s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/depth_info_stamped.h
+[1.715s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/bounding_box2_df__functions.h
+[1.716s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/bounding_box2_df__struct.h
+[1.717s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/bounding_box2_df__type_support.h
+[1.718s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/bounding_box2_di__functions.h
+[1.718s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/bounding_box2_di__struct.h
+[1.720s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/bounding_box2_di__type_support.h
+[1.720s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/bounding_box3_d__functions.h
+[1.721s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/bounding_box3_d__struct.h
+[1.722s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/bounding_box3_d__type_support.h
+[1.722s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/depth_info_stamped__functions.h
+[1.723s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/depth_info_stamped__struct.h
+[1.723s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/depth_info_stamped__type_support.h
+[1.724s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/gnss_fusion_status__functions.h
+[1.724s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/gnss_fusion_status__struct.h
+[1.724s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/gnss_fusion_status__type_support.h
+[1.725s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/health_status_stamped__functions.h
+[1.725s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/health_status_stamped__struct.h
+[1.725s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/health_status_stamped__type_support.h
+[1.725s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/heartbeat__functions.h
+[1.725s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/heartbeat__struct.h
+[1.725s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/heartbeat__type_support.h
+[1.725s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/keypoint2_df__functions.h
+[1.725s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/keypoint2_df__struct.h
+[1.726s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/keypoint2_df__type_support.h
+[1.726s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/keypoint2_di__functions.h
+[1.726s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/keypoint2_di__struct.h
+[1.726s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/keypoint2_di__type_support.h
+[1.726s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/keypoint3_d__functions.h
+[1.726s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/keypoint3_d__struct.h
+[1.727s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/keypoint3_d__type_support.h
+[1.727s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/mag_heading_status__functions.h
+[1.727s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/mag_heading_status__struct.h
+[1.727s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/mag_heading_status__type_support.h
+[1.727s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/object__functions.h
+[1.728s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/object__struct.h
+[1.728s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/object__type_support.h
+[1.728s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/objects_stamped__functions.h
+[1.730s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/objects_stamped__struct.h
+[1.730s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/objects_stamped__type_support.h
+[1.731s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/plane_stamped__functions.h
+[1.731s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/plane_stamped__struct.h
+[1.732s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/plane_stamped__type_support.h
+[1.732s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/pos_track_status__functions.h
+[1.732s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/pos_track_status__struct.h
+[1.732s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/pos_track_status__type_support.h
+[1.734s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/skeleton2_d__functions.h
+[1.734s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/skeleton2_d__struct.h
+[1.735s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/skeleton2_d__type_support.h
+[1.735s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/skeleton3_d__functions.h
+[1.735s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/skeleton3_d__struct.h
+[1.735s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/skeleton3_d__type_support.h
+[1.736s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/svo_status__functions.h
+[1.736s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/svo_status__struct.h
+[1.736s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/svo_status__type_support.h
+[1.736s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/gnss_fusion_status.h
+[1.736s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/health_status_stamped.h
+[1.737s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/heartbeat.h
+[1.737s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/keypoint2_df.h
+[1.737s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/keypoint2_di.h
+[1.737s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/keypoint3_d.h
+[1.737s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/mag_heading_status.h
+[1.737s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/object.h
+[1.738s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/objects_stamped.h
+[1.738s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/plane_stamped.h
+[1.738s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/pos_track_status.h
+[1.738s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/rosidl_generator_c__visibility_control.h
+[1.738s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/skeleton2_d.h
+[1.739s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/skeleton3_d.h
+[1.739s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/svo_status.h
+[1.739s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/srv/detail/set_pose__functions.h
+[1.739s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/srv/detail/set_pose__struct.h
+[1.740s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/srv/detail/set_pose__type_support.h
+[1.740s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/srv/detail/set_roi__functions.h
+[1.740s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/srv/detail/set_roi__struct.h
+[1.740s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/srv/detail/set_roi__type_support.h
+[1.740s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/srv/detail/set_svo_frame__functions.h
+[1.740s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/srv/detail/set_svo_frame__struct.h
+[1.741s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/srv/detail/set_svo_frame__type_support.h
+[1.741s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/srv/detail/start_svo_rec__functions.h
+[1.741s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/srv/detail/start_svo_rec__struct.h
+[1.741s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/srv/detail/start_svo_rec__type_support.h
+[1.742s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/srv/set_pose.h
+[1.742s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/srv/set_roi.h
+[1.742s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/srv/set_svo_frame.h
+[1.742s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/srv/start_svo_rec.h
+[1.742s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/share/zed_msgs/environment/library_path.sh
+[1.742s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/share/zed_msgs/environment/library_path.dsv
+[1.743s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/bounding_box2_df__rosidl_typesupport_fastrtps_c.h
+[1.743s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/bounding_box2_di__rosidl_typesupport_fastrtps_c.h
+[1.743s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/bounding_box3_d__rosidl_typesupport_fastrtps_c.h
+[1.743s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/depth_info_stamped__rosidl_typesupport_fastrtps_c.h
+[1.743s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/gnss_fusion_status__rosidl_typesupport_fastrtps_c.h
+[1.744s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/health_status_stamped__rosidl_typesupport_fastrtps_c.h
+[1.744s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/heartbeat__rosidl_typesupport_fastrtps_c.h
+[1.744s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/keypoint2_df__rosidl_typesupport_fastrtps_c.h
+[1.744s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/keypoint2_di__rosidl_typesupport_fastrtps_c.h
+[1.745s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/keypoint3_d__rosidl_typesupport_fastrtps_c.h
+[1.745s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/mag_heading_status__rosidl_typesupport_fastrtps_c.h
+[1.745s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/object__rosidl_typesupport_fastrtps_c.h
+[1.745s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/objects_stamped__rosidl_typesupport_fastrtps_c.h
+[1.745s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/plane_stamped__rosidl_typesupport_fastrtps_c.h
+[1.746s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/pos_track_status__rosidl_typesupport_fastrtps_c.h
+[1.746s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/skeleton2_d__rosidl_typesupport_fastrtps_c.h
+[1.746s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/skeleton3_d__rosidl_typesupport_fastrtps_c.h
+[1.746s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/svo_status__rosidl_typesupport_fastrtps_c.h
+[1.746s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[1.747s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/srv/detail/set_pose__rosidl_typesupport_fastrtps_c.h
+[1.747s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/srv/detail/set_roi__rosidl_typesupport_fastrtps_c.h
+[1.747s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/srv/detail/set_svo_frame__rosidl_typesupport_fastrtps_c.h
+[1.747s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/srv/detail/start_svo_rec__rosidl_typesupport_fastrtps_c.h
+[1.748s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/bounding_box2_df.hpp
+[1.748s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/bounding_box2_di.hpp
+[1.761s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/bounding_box3_d.hpp
+[1.763s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/depth_info_stamped.hpp
+[1.764s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/bounding_box2_df__builder.hpp
+[1.764s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/bounding_box2_df__struct.hpp
+[1.764s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/bounding_box2_df__traits.hpp
+[1.764s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/bounding_box2_df__type_support.hpp
+[1.765s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/bounding_box2_di__builder.hpp
+[1.766s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/bounding_box2_di__struct.hpp
+[1.766s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/bounding_box2_di__traits.hpp
+[1.766s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/bounding_box2_di__type_support.hpp
+[1.766s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/bounding_box3_d__builder.hpp
+[1.767s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/bounding_box3_d__struct.hpp
+[1.767s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/bounding_box3_d__traits.hpp
+[1.767s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/bounding_box3_d__type_support.hpp
+[1.767s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/depth_info_stamped__builder.hpp
+[1.775s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/depth_info_stamped__struct.hpp
+[1.775s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/depth_info_stamped__traits.hpp
+[1.775s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/depth_info_stamped__type_support.hpp
+[1.775s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/gnss_fusion_status__builder.hpp
+[1.775s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/gnss_fusion_status__struct.hpp
+[1.775s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/gnss_fusion_status__traits.hpp
+[1.775s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/gnss_fusion_status__type_support.hpp
+[1.776s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/health_status_stamped__builder.hpp
+[1.776s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/health_status_stamped__struct.hpp
+[1.776s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/health_status_stamped__traits.hpp
+[1.776s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/health_status_stamped__type_support.hpp
+[1.776s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/heartbeat__builder.hpp
+[1.776s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/heartbeat__struct.hpp
+[1.776s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/heartbeat__traits.hpp
+[1.776s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/heartbeat__type_support.hpp
+[1.776s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/keypoint2_df__builder.hpp
+[1.777s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/keypoint2_df__struct.hpp
+[1.777s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/keypoint2_df__traits.hpp
+[1.777s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/keypoint2_df__type_support.hpp
+[1.777s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/keypoint2_di__builder.hpp
+[1.777s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/keypoint2_di__struct.hpp
+[1.777s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/keypoint2_di__traits.hpp
+[1.777s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/keypoint2_di__type_support.hpp
+[1.777s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/keypoint3_d__builder.hpp
+[1.777s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/keypoint3_d__struct.hpp
+[1.777s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/keypoint3_d__traits.hpp
+[1.777s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/keypoint3_d__type_support.hpp
+[1.778s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/mag_heading_status__builder.hpp
+[1.783s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/mag_heading_status__struct.hpp
+[1.783s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/mag_heading_status__traits.hpp
+[1.784s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/mag_heading_status__type_support.hpp
+[1.784s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/object__builder.hpp
+[1.784s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/object__struct.hpp
+[1.784s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/object__traits.hpp
+[1.784s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/object__type_support.hpp
+[1.784s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/objects_stamped__builder.hpp
+[1.784s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/objects_stamped__struct.hpp
+[1.784s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/objects_stamped__traits.hpp
+[1.784s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/objects_stamped__type_support.hpp
+[1.785s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/plane_stamped__builder.hpp
+[1.785s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/plane_stamped__struct.hpp
+[1.785s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/plane_stamped__traits.hpp
+[1.785s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/plane_stamped__type_support.hpp
+[1.785s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/pos_track_status__builder.hpp
+[1.785s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/pos_track_status__struct.hpp
+[1.785s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/pos_track_status__traits.hpp
+[1.785s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/pos_track_status__type_support.hpp
+[1.785s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/skeleton2_d__builder.hpp
+[1.785s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/skeleton2_d__struct.hpp
+[1.785s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/skeleton2_d__traits.hpp
+[1.786s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/skeleton2_d__type_support.hpp
+[1.786s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/skeleton3_d__builder.hpp
+[1.786s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/skeleton3_d__struct.hpp
+[1.786s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/skeleton3_d__traits.hpp
+[1.786s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/skeleton3_d__type_support.hpp
+[1.786s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/svo_status__builder.hpp
+[1.786s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/svo_status__struct.hpp
+[1.786s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/svo_status__traits.hpp
+[1.791s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/svo_status__type_support.hpp
+[1.791s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/gnss_fusion_status.hpp
+[1.792s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/health_status_stamped.hpp
+[1.792s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/heartbeat.hpp
+[1.792s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/keypoint2_df.hpp
+[1.792s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/keypoint2_di.hpp
+[1.793s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/keypoint3_d.hpp
+[1.793s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/mag_heading_status.hpp
+[1.794s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/object.hpp
+[1.794s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/objects_stamped.hpp
+[1.795s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/plane_stamped.hpp
+[1.795s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/pos_track_status.hpp
+[1.795s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[1.795s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/skeleton2_d.hpp
+[1.796s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/skeleton3_d.hpp
+[1.796s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/svo_status.hpp
+[1.797s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/srv/detail/set_pose__builder.hpp
+[1.797s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/srv/detail/set_pose__struct.hpp
+[1.798s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/srv/detail/set_pose__traits.hpp
+[1.798s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/srv/detail/set_pose__type_support.hpp
+[1.798s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/srv/detail/set_roi__builder.hpp
+[1.798s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/srv/detail/set_roi__struct.hpp
+[1.798s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/srv/detail/set_roi__traits.hpp
+[1.798s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/srv/detail/set_roi__type_support.hpp
+[1.798s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/srv/detail/set_svo_frame__builder.hpp
+[1.799s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/srv/detail/set_svo_frame__struct.hpp
+[1.799s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/srv/detail/set_svo_frame__traits.hpp
+[1.799s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/srv/detail/set_svo_frame__type_support.hpp
+[1.799s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/srv/detail/start_svo_rec__builder.hpp
+[1.799s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/srv/detail/start_svo_rec__struct.hpp
+[1.799s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/srv/detail/start_svo_rec__traits.hpp
+[1.799s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/srv/detail/start_svo_rec__type_support.hpp
+[1.800s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/srv/set_pose.hpp
+[1.800s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/srv/set_roi.hpp
+[1.800s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/srv/set_svo_frame.hpp
+[1.800s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/srv/start_svo_rec.hpp
+[1.800s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/bounding_box2_df__rosidl_typesupport_fastrtps_cpp.hpp
+[1.800s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/bounding_box2_di__rosidl_typesupport_fastrtps_cpp.hpp
+[1.800s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/bounding_box3_d__rosidl_typesupport_fastrtps_cpp.hpp
+[1.800s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/depth_info_stamped__rosidl_typesupport_fastrtps_cpp.hpp
+[1.800s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/gnss_fusion_status__rosidl_typesupport_fastrtps_cpp.hpp
+[1.801s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/health_status_stamped__rosidl_typesupport_fastrtps_cpp.hpp
+[1.802s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/heartbeat__rosidl_typesupport_fastrtps_cpp.hpp
+[1.803s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/keypoint2_df__rosidl_typesupport_fastrtps_cpp.hpp
+[1.803s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/keypoint2_di__rosidl_typesupport_fastrtps_cpp.hpp
+[1.803s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/keypoint3_d__rosidl_typesupport_fastrtps_cpp.hpp
+[1.803s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/mag_heading_status__rosidl_typesupport_fastrtps_cpp.hpp
+[1.803s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/object__rosidl_typesupport_fastrtps_cpp.hpp
+[1.803s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/objects_stamped__rosidl_typesupport_fastrtps_cpp.hpp
+[1.803s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/plane_stamped__rosidl_typesupport_fastrtps_cpp.hpp
+[1.803s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/pos_track_status__rosidl_typesupport_fastrtps_cpp.hpp
+[1.803s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/skeleton2_d__rosidl_typesupport_fastrtps_cpp.hpp
+[1.803s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/skeleton3_d__rosidl_typesupport_fastrtps_cpp.hpp
+[1.804s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/svo_status__rosidl_typesupport_fastrtps_cpp.hpp
+[1.804s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[1.804s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/srv/detail/set_pose__rosidl_typesupport_fastrtps_cpp.hpp
+[1.804s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/srv/detail/set_roi__rosidl_typesupport_fastrtps_cpp.hpp
+[1.804s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/srv/detail/set_svo_frame__rosidl_typesupport_fastrtps_cpp.hpp
+[1.804s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/srv/detail/start_svo_rec__rosidl_typesupport_fastrtps_cpp.hpp
+[1.804s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/bounding_box2_df__rosidl_typesupport_introspection_c.h
+[1.804s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/bounding_box2_di__rosidl_typesupport_introspection_c.h
+[1.804s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/bounding_box3_d__rosidl_typesupport_introspection_c.h
+[1.804s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/depth_info_stamped__rosidl_typesupport_introspection_c.h
+[1.804s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/gnss_fusion_status__rosidl_typesupport_introspection_c.h
+[1.804s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/health_status_stamped__rosidl_typesupport_introspection_c.h
+[1.805s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/heartbeat__rosidl_typesupport_introspection_c.h
+[1.805s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/keypoint2_df__rosidl_typesupport_introspection_c.h
+[1.805s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/keypoint2_di__rosidl_typesupport_introspection_c.h
+[1.805s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/keypoint3_d__rosidl_typesupport_introspection_c.h
+[1.805s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/mag_heading_status__rosidl_typesupport_introspection_c.h
+[1.805s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/object__rosidl_typesupport_introspection_c.h
+[1.805s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/objects_stamped__rosidl_typesupport_introspection_c.h
+[1.805s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/plane_stamped__rosidl_typesupport_introspection_c.h
+[1.805s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/pos_track_status__rosidl_typesupport_introspection_c.h
+[1.805s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/skeleton2_d__rosidl_typesupport_introspection_c.h
+[1.805s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/skeleton3_d__rosidl_typesupport_introspection_c.h
+[1.806s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/svo_status__rosidl_typesupport_introspection_c.h
+[1.806s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[1.806s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/srv/detail/set_pose__rosidl_typesupport_introspection_c.h
+[1.806s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/srv/detail/set_roi__rosidl_typesupport_introspection_c.h
+[1.806s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/srv/detail/set_svo_frame__rosidl_typesupport_introspection_c.h
+[1.806s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/srv/detail/start_svo_rec__rosidl_typesupport_introspection_c.h
+[1.806s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/bounding_box2_df__rosidl_typesupport_introspection_cpp.hpp
+[1.806s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/bounding_box2_di__rosidl_typesupport_introspection_cpp.hpp
+[1.806s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/bounding_box3_d__rosidl_typesupport_introspection_cpp.hpp
+[1.811s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/depth_info_stamped__rosidl_typesupport_introspection_cpp.hpp
+[1.811s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/gnss_fusion_status__rosidl_typesupport_introspection_cpp.hpp
+[1.812s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/health_status_stamped__rosidl_typesupport_introspection_cpp.hpp
+[1.812s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/heartbeat__rosidl_typesupport_introspection_cpp.hpp
+[1.812s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/keypoint2_df__rosidl_typesupport_introspection_cpp.hpp
+[1.812s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/keypoint2_di__rosidl_typesupport_introspection_cpp.hpp
+[1.812s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/keypoint3_d__rosidl_typesupport_introspection_cpp.hpp
+[1.812s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/mag_heading_status__rosidl_typesupport_introspection_cpp.hpp
+[1.813s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/object__rosidl_typesupport_introspection_cpp.hpp
+[1.813s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/objects_stamped__rosidl_typesupport_introspection_cpp.hpp
+[1.813s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/plane_stamped__rosidl_typesupport_introspection_cpp.hpp
+[1.813s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/pos_track_status__rosidl_typesupport_introspection_cpp.hpp
+[1.813s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/skeleton2_d__rosidl_typesupport_introspection_cpp.hpp
+[1.813s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/skeleton3_d__rosidl_typesupport_introspection_cpp.hpp
+[1.814s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/msg/detail/svo_status__rosidl_typesupport_introspection_cpp.hpp
+[1.814s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/srv/detail/set_pose__rosidl_typesupport_introspection_cpp.hpp
+[1.814s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/srv/detail/set_roi__rosidl_typesupport_introspection_cpp.hpp
+[1.814s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/srv/detail/set_svo_frame__rosidl_typesupport_introspection_cpp.hpp
+[1.814s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/include/zed_msgs/zed_msgs/srv/detail/start_svo_rec__rosidl_typesupport_introspection_cpp.hpp
+[1.814s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/share/zed_msgs/environment/pythonpath.sh
+[1.814s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/share/zed_msgs/environment/pythonpath.dsv
+[1.814s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/local/lib/python3.10/dist-packages/zed_msgs-5.0.0-py3.10.egg-info/PKG-INFO
+[1.819s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/local/lib/python3.10/dist-packages/zed_msgs-5.0.0-py3.10.egg-info/SOURCES.txt
+[1.819s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/local/lib/python3.10/dist-packages/zed_msgs-5.0.0-py3.10.egg-info/dependency_links.txt
+[1.819s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/local/lib/python3.10/dist-packages/zed_msgs-5.0.0-py3.10.egg-info/top_level.txt
+[1.819s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/local/lib/python3.10/dist-packages/zed_msgs/__init__.py
+[1.819s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/local/lib/python3.10/dist-packages/zed_msgs/_zed_msgs_s.ep.rosidl_typesupport_c.c
+[1.819s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/local/lib/python3.10/dist-packages/zed_msgs/_zed_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[1.819s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/local/lib/python3.10/dist-packages/zed_msgs/_zed_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[1.820s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/local/lib/python3.10/dist-packages/zed_msgs/libzed_msgs__rosidl_generator_py.so
+[1.820s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/local/lib/python3.10/dist-packages/zed_msgs/msg/__init__.py
+[1.820s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/local/lib/python3.10/dist-packages/zed_msgs/msg/_bounding_box2_df.py
+[1.820s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/local/lib/python3.10/dist-packages/zed_msgs/msg/_bounding_box2_df_s.c
+[1.820s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/local/lib/python3.10/dist-packages/zed_msgs/msg/_bounding_box2_di.py
+[1.820s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/local/lib/python3.10/dist-packages/zed_msgs/msg/_bounding_box2_di_s.c
+[1.820s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/local/lib/python3.10/dist-packages/zed_msgs/msg/_bounding_box3_d.py
+[1.820s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/local/lib/python3.10/dist-packages/zed_msgs/msg/_bounding_box3_d_s.c
+[1.820s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/local/lib/python3.10/dist-packages/zed_msgs/msg/_depth_info_stamped.py
+[1.820s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/local/lib/python3.10/dist-packages/zed_msgs/msg/_depth_info_stamped_s.c
+[1.821s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/local/lib/python3.10/dist-packages/zed_msgs/msg/_gnss_fusion_status.py
+[1.821s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/local/lib/python3.10/dist-packages/zed_msgs/msg/_gnss_fusion_status_s.c
+[1.821s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/local/lib/python3.10/dist-packages/zed_msgs/msg/_health_status_stamped.py
+[1.821s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/local/lib/python3.10/dist-packages/zed_msgs/msg/_health_status_stamped_s.c
+[1.821s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/local/lib/python3.10/dist-packages/zed_msgs/msg/_heartbeat.py
+[1.821s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/local/lib/python3.10/dist-packages/zed_msgs/msg/_heartbeat_s.c
+[1.821s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/local/lib/python3.10/dist-packages/zed_msgs/msg/_keypoint2_df.py
+[1.821s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/local/lib/python3.10/dist-packages/zed_msgs/msg/_keypoint2_df_s.c
+[1.821s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/local/lib/python3.10/dist-packages/zed_msgs/msg/_keypoint2_di.py
+[1.821s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/local/lib/python3.10/dist-packages/zed_msgs/msg/_keypoint2_di_s.c
+[1.821s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/local/lib/python3.10/dist-packages/zed_msgs/msg/_keypoint3_d.py
+[1.822s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/local/lib/python3.10/dist-packages/zed_msgs/msg/_keypoint3_d_s.c
+[1.822s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/local/lib/python3.10/dist-packages/zed_msgs/msg/_mag_heading_status.py
+[1.822s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/local/lib/python3.10/dist-packages/zed_msgs/msg/_mag_heading_status_s.c
+[1.822s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/local/lib/python3.10/dist-packages/zed_msgs/msg/_object.py
+[1.822s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/local/lib/python3.10/dist-packages/zed_msgs/msg/_object_s.c
+[1.822s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/local/lib/python3.10/dist-packages/zed_msgs/msg/_objects_stamped.py
+[1.822s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/local/lib/python3.10/dist-packages/zed_msgs/msg/_objects_stamped_s.c
+[1.822s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/local/lib/python3.10/dist-packages/zed_msgs/msg/_plane_stamped.py
+[1.826s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/local/lib/python3.10/dist-packages/zed_msgs/msg/_plane_stamped_s.c
+[1.827s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/local/lib/python3.10/dist-packages/zed_msgs/msg/_pos_track_status.py
+[1.827s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/local/lib/python3.10/dist-packages/zed_msgs/msg/_pos_track_status_s.c
+[1.828s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/local/lib/python3.10/dist-packages/zed_msgs/msg/_skeleton2_d.py
+[1.828s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/local/lib/python3.10/dist-packages/zed_msgs/msg/_skeleton2_d_s.c
+[1.828s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/local/lib/python3.10/dist-packages/zed_msgs/msg/_skeleton3_d.py
+[1.828s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/local/lib/python3.10/dist-packages/zed_msgs/msg/_skeleton3_d_s.c
+[1.828s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/local/lib/python3.10/dist-packages/zed_msgs/msg/_svo_status.py
+[1.829s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/local/lib/python3.10/dist-packages/zed_msgs/msg/_svo_status_s.c
+[1.829s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/local/lib/python3.10/dist-packages/zed_msgs/srv/__init__.py
+[1.829s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/local/lib/python3.10/dist-packages/zed_msgs/srv/_set_pose.py
+[1.829s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/local/lib/python3.10/dist-packages/zed_msgs/srv/_set_pose_s.c
+[1.829s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/local/lib/python3.10/dist-packages/zed_msgs/srv/_set_roi.py
+[1.829s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/local/lib/python3.10/dist-packages/zed_msgs/srv/_set_roi_s.c
+[1.829s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/local/lib/python3.10/dist-packages/zed_msgs/srv/_set_svo_frame.py
+[1.829s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/local/lib/python3.10/dist-packages/zed_msgs/srv/_set_svo_frame_s.c
+[1.829s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/local/lib/python3.10/dist-packages/zed_msgs/srv/_start_svo_rec.py
+[1.829s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/local/lib/python3.10/dist-packages/zed_msgs/srv/_start_svo_rec_s.c
+[1.829s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/local/lib/python3.10/dist-packages/zed_msgs/zed_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so
+[1.830s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/local/lib/python3.10/dist-packages/zed_msgs/zed_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so
+[1.830s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/local/lib/python3.10/dist-packages/zed_msgs/zed_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so
+[1.830s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/local/lib/python3.10/dist-packages/zed_msgs/zed_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so
+[1.832s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/local/lib/python3.10/dist-packages/zed_msgs/zed_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so
+[1.832s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/local/lib/python3.10/dist-packages/zed_msgs/zed_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so
+[1.833s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/share/zed_msgs/msg/Object.idl
+[1.833s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/share/zed_msgs/msg/ObjectsStamped.idl
+[1.833s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/share/zed_msgs/msg/Keypoint2Di.idl
+[1.833s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/share/zed_msgs/msg/Keypoint2Df.idl
+[1.833s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/share/zed_msgs/msg/Keypoint3D.idl
+[1.833s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/share/zed_msgs/msg/BoundingBox2Di.idl
+[1.833s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/share/zed_msgs/msg/BoundingBox2Df.idl
+[1.833s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/share/zed_msgs/msg/BoundingBox3D.idl
+[1.833s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/share/zed_msgs/msg/Skeleton2D.idl
+[1.833s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/share/zed_msgs/msg/Skeleton3D.idl
+[1.834s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/share/zed_msgs/msg/DepthInfoStamped.idl
+[1.834s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/share/zed_msgs/msg/PlaneStamped.idl
+[1.834s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/share/zed_msgs/msg/PosTrackStatus.idl
+[1.834s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/share/zed_msgs/msg/GnssFusionStatus.idl
+[1.838s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/share/zed_msgs/msg/Heartbeat.idl
+[1.839s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/share/zed_msgs/msg/MagHeadingStatus.idl
+[1.839s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/share/zed_msgs/msg/SvoStatus.idl
+[1.839s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/share/zed_msgs/msg/HealthStatusStamped.idl
+[1.839s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/share/zed_msgs/srv/SetPose.idl
+[1.839s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/share/zed_msgs/srv/StartSvoRec.idl
+[1.839s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/share/zed_msgs/srv/SetROI.idl
+[1.839s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/share/zed_msgs/srv/SetSvoFrame.idl
+[1.839s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/share/zed_msgs/msg/Object.msg
+[1.839s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/share/zed_msgs/msg/ObjectsStamped.msg
+[1.840s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/share/zed_msgs/msg/Keypoint2Di.msg
+[1.840s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/share/zed_msgs/msg/Keypoint2Df.msg
+[1.840s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/share/zed_msgs/msg/Keypoint3D.msg
+[1.840s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/share/zed_msgs/msg/BoundingBox2Di.msg
+[1.840s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/share/zed_msgs/msg/BoundingBox2Df.msg
+[1.840s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/share/zed_msgs/msg/BoundingBox3D.msg
+[1.840s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/share/zed_msgs/msg/Skeleton2D.msg
+[1.840s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/share/zed_msgs/msg/Skeleton3D.msg
+[1.840s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/share/zed_msgs/msg/DepthInfoStamped.msg
+[1.840s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/share/zed_msgs/msg/PlaneStamped.msg
+[1.840s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/share/zed_msgs/msg/PosTrackStatus.msg
+[1.840s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/share/zed_msgs/msg/GnssFusionStatus.msg
+[1.841s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/share/zed_msgs/msg/Heartbeat.msg
+[1.841s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/share/zed_msgs/msg/MagHeadingStatus.msg
+[1.841s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/share/zed_msgs/msg/SvoStatus.msg
+[1.841s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/share/zed_msgs/msg/HealthStatusStamped.msg
+[1.841s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/share/zed_msgs/srv/SetPose.srv
+[1.841s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/share/zed_msgs/srv/SetPose_Request.msg
+[1.841s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/share/zed_msgs/srv/SetPose_Response.msg
+[1.841s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/share/zed_msgs/srv/StartSvoRec.srv
+[1.841s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/share/zed_msgs/srv/StartSvoRec_Request.msg
+[1.841s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/share/zed_msgs/srv/StartSvoRec_Response.msg
+[1.841s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/share/zed_msgs/srv/SetROI.srv
+[1.842s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/share/zed_msgs/srv/SetROI_Request.msg
+[1.842s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/share/zed_msgs/srv/SetROI_Response.msg
+[1.842s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/share/zed_msgs/srv/SetSvoFrame.srv
+[1.842s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/share/zed_msgs/srv/SetSvoFrame_Request.msg
+[1.842s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/share/zed_msgs/srv/SetSvoFrame_Response.msg
+[1.842s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/share/zed_msgs/meshes/virtual.stl
+[1.842s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/share/zed_msgs/meshes/zed.stl
+[1.842s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/share/zed_msgs/meshes/zed2.stl
+[1.842s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/share/zed_msgs/meshes/zed2i.stl
+[1.847s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/share/zed_msgs/meshes/zedm.stl
+[1.847s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/share/zed_msgs/meshes/zedx.stl
+[1.847s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/share/zed_msgs/meshes/zedxm.stl
+[1.847s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/share/zed_msgs/meshes/zedxone4k.stl
+[1.847s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/share/zed_msgs/meshes/zedxonegs.stl
+[1.847s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/share/ament_index/resource_index/package_run_dependencies/zed_msgs
+[1.847s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/share/ament_index/resource_index/parent_prefix_path/zed_msgs
+[1.847s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/share/zed_msgs/environment/ament_prefix_path.sh
+[1.848s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/share/zed_msgs/environment/ament_prefix_path.dsv
+[1.848s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/share/zed_msgs/environment/path.sh
+[1.848s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/share/zed_msgs/environment/path.dsv
+[1.848s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/share/zed_msgs/local_setup.bash
+[1.848s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/share/zed_msgs/local_setup.sh
+[1.848s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/share/zed_msgs/local_setup.zsh
+[1.848s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/share/zed_msgs/local_setup.dsv
+[1.848s] -- Symlinking: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/share/zed_msgs/package.dsv
+[1.856s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/share/ament_index/resource_index/packages/zed_msgs
+[1.856s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/share/zed_msgs/cmake/rosidl_cmake-extras.cmake
+[1.856s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/share/zed_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.856s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/share/zed_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.856s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/share/zed_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[1.857s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/share/zed_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[1.857s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/share/zed_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[1.857s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/share/zed_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[1.857s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/share/zed_msgs/cmake/zed_msgsConfig.cmake
+[1.857s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/share/zed_msgs/cmake/zed_msgsConfig-version.cmake
+[1.857s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/share/zed_msgs/package.xml
+[1.858s] -- Up-to-date: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/lib/libzed_msgs__rosidl_generator_c.so
+[1.858s] -- Up-to-date: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/lib/libzed_msgs__rosidl_typesupport_fastrtps_c.so
+[1.859s] -- Up-to-date: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/lib/libzed_msgs__rosidl_typesupport_fastrtps_cpp.so
+[1.859s] -- Up-to-date: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/lib/libzed_msgs__rosidl_typesupport_introspection_c.so
+[1.859s] -- Up-to-date: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/lib/libzed_msgs__rosidl_typesupport_c.so
+[1.860s] -- Up-to-date: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/lib/libzed_msgs__rosidl_typesupport_introspection_cpp.so
+[1.860s] -- Up-to-date: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/lib/libzed_msgs__rosidl_typesupport_cpp.so
+[1.990s] Listing '/workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/local/lib/python3.10/dist-packages/zed_msgs'...
+[1.990s] Listing '/workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/local/lib/python3.10/dist-packages/zed_msgs/msg'...
+[1.990s] Listing '/workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/local/lib/python3.10/dist-packages/zed_msgs/srv'...
+[2.002s] -- Up-to-date: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/lib/libzed_msgs__rosidl_generator_py.so
+[2.002s] -- Up-to-date: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/share/zed_msgs/cmake/export_zed_msgs__rosidl_generator_cExport.cmake
+[2.002s] -- Up-to-date: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/share/zed_msgs/cmake/export_zed_msgs__rosidl_generator_cExport-noconfig.cmake
+[2.002s] -- Up-to-date: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/share/zed_msgs/cmake/export_zed_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[2.003s] -- Up-to-date: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/share/zed_msgs/cmake/export_zed_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[2.003s] -- Up-to-date: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/share/zed_msgs/cmake/export_zed_msgs__rosidl_generator_cppExport.cmake
+[2.003s] -- Up-to-date: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/share/zed_msgs/cmake/export_zed_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[2.003s] -- Up-to-date: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/share/zed_msgs/cmake/export_zed_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[2.003s] -- Up-to-date: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/share/zed_msgs/cmake/zed_msgs__rosidl_typesupport_introspection_cExport.cmake
+[2.003s] -- Up-to-date: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/share/zed_msgs/cmake/zed_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[2.003s] -- Up-to-date: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/share/zed_msgs/cmake/zed_msgs__rosidl_typesupport_cExport.cmake
+[2.004s] -- Up-to-date: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/share/zed_msgs/cmake/zed_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[2.004s] -- Up-to-date: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/share/zed_msgs/cmake/zed_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[2.004s] -- Up-to-date: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/share/zed_msgs/cmake/zed_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[2.004s] -- Up-to-date: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/share/zed_msgs/cmake/zed_msgs__rosidl_typesupport_cppExport.cmake
+[2.004s] -- Up-to-date: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/share/zed_msgs/cmake/zed_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[2.004s] -- Up-to-date: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/share/zed_msgs/cmake/export_zed_msgs__rosidl_generator_pyExport.cmake
+[2.004s] -- Up-to-date: /workspaces/isaac_ros-dev/ros_ws/install/zed_msgs/share/zed_msgs/cmake/export_zed_msgs__rosidl_generator_pyExport-noconfig.cmake
+[2.008s] Invoked command in '/workspaces/isaac_ros-dev/ros_ws/build/zed_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /workspaces/isaac_ros-dev/ros_ws/build/zed_msgs

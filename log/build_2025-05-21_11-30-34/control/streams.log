@@ -1,0 +1,39 @@
+[3.337s] Invoking command in '/workspaces/isaac_ros-dev/ros_ws/src/control': PYTHONPATH=/workspaces/isaac_ros-dev/ros_ws/build/control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspaces/isaac_ros-dev/ros_ws/install/control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/control build --build-base /workspaces/isaac_ros-dev/ros_ws/build/control/build install --record /workspaces/isaac_ros-dev/ros_ws/build/control/install.log --single-version-externally-managed install_data
+[4.061s] running egg_info
+[4.061s] creating ../../build/control/control.egg-info
+[4.090s] writing ../../build/control/control.egg-info/PKG-INFO
+[4.090s] writing dependency_links to ../../build/control/control.egg-info/dependency_links.txt
+[4.091s] writing entry points to ../../build/control/control.egg-info/entry_points.txt
+[4.091s] writing requirements to ../../build/control/control.egg-info/requires.txt
+[4.091s] writing top-level names to ../../build/control/control.egg-info/top_level.txt
+[4.091s] writing manifest file '../../build/control/control.egg-info/SOURCES.txt'
+[4.413s] reading manifest file '../../build/control/control.egg-info/SOURCES.txt'
+[4.414s] writing manifest file '../../build/control/control.egg-info/SOURCES.txt'
+[4.414s] running build
+[4.414s] running build_py
+[4.415s] creating /workspaces/isaac_ros-dev/ros_ws/build/control/build
+[4.415s] creating /workspaces/isaac_ros-dev/ros_ws/build/control/build/lib
+[4.415s] creating /workspaces/isaac_ros-dev/ros_ws/build/control/build/lib/control
+[4.415s] copying control/control_node.py -> /workspaces/isaac_ros-dev/ros_ws/build/control/build/lib/control
+[4.415s] copying control/__init__.py -> /workspaces/isaac_ros-dev/ros_ws/build/control/build/lib/control
+[4.416s] running install
+[4.425s] running install_lib
+[4.459s] creating /workspaces/isaac_ros-dev/ros_ws/install/control/lib/python3.10/site-packages/control
+[4.459s] copying /workspaces/isaac_ros-dev/ros_ws/build/control/build/lib/control/control_node.py -> /workspaces/isaac_ros-dev/ros_ws/install/control/lib/python3.10/site-packages/control
+[4.459s] copying /workspaces/isaac_ros-dev/ros_ws/build/control/build/lib/control/__init__.py -> /workspaces/isaac_ros-dev/ros_ws/install/control/lib/python3.10/site-packages/control
+[4.460s] byte-compiling /workspaces/isaac_ros-dev/ros_ws/install/control/lib/python3.10/site-packages/control/control_node.py to control_node.cpython-310.pyc
+[4.461s] byte-compiling /workspaces/isaac_ros-dev/ros_ws/install/control/lib/python3.10/site-packages/control/__init__.py to __init__.cpython-310.pyc
+[4.461s] running install_data
+[4.462s] creating /workspaces/isaac_ros-dev/ros_ws/install/control/share/ament_index
+[4.462s] creating /workspaces/isaac_ros-dev/ros_ws/install/control/share/ament_index/resource_index
+[4.462s] creating /workspaces/isaac_ros-dev/ros_ws/install/control/share/ament_index/resource_index/packages
+[4.462s] copying resource/control -> /workspaces/isaac_ros-dev/ros_ws/install/control/share/ament_index/resource_index/packages
+[4.462s] copying package.xml -> /workspaces/isaac_ros-dev/ros_ws/install/control/share/control
+[4.463s] creating /workspaces/isaac_ros-dev/ros_ws/install/control/share/control/launch
+[4.463s] copying launch/control.launch.py -> /workspaces/isaac_ros-dev/ros_ws/install/control/share/control/launch
+[4.463s] running install_egg_info
+[4.497s] Copying ../../build/control/control.egg-info to /workspaces/isaac_ros-dev/ros_ws/install/control/lib/python3.10/site-packages/control-0.0.1-py3.10.egg-info
+[4.499s] running install_scripts
+[4.613s] Installing control_node script to /workspaces/isaac_ros-dev/ros_ws/install/control/lib/control
+[4.614s] writing list of installed files to '/workspaces/isaac_ros-dev/ros_ws/build/control/install.log'
+[4.715s] Invoked command in '/workspaces/isaac_ros-dev/ros_ws/src/control' returned '0': PYTHONPATH=/workspaces/isaac_ros-dev/ros_ws/build/control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspaces/isaac_ros-dev/ros_ws/install/control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/control build --build-base /workspaces/isaac_ros-dev/ros_ws/build/control/build install --record /workspaces/isaac_ros-dev/ros_ws/build/control/install.log --single-version-externally-managed install_data

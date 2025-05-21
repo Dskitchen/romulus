@@ -1,0 +1,31 @@
+[1.905s] Invoking command in '/workspaces/isaac_ros-dev/ros_ws/build/vision': PYTHONPATH=/workspaces/isaac_ros-dev/ros_ws/build/vision/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspaces/isaac_ros-dev/ros_ws/install/vision/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /workspaces/isaac_ros-dev/ros_ws/build/vision/build
+[2.565s] running develop
+[3.026s] Removing /workspaces/isaac_ros-dev/ros_ws/install/vision/lib/python3.10/site-packages/vision.egg-link (link to .)
+[3.172s] Invoked command in '/workspaces/isaac_ros-dev/ros_ws/build/vision' returned '0': PYTHONPATH=/workspaces/isaac_ros-dev/ros_ws/build/vision/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspaces/isaac_ros-dev/ros_ws/install/vision/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /workspaces/isaac_ros-dev/ros_ws/build/vision/build
+[3.176s] Invoking command in '/workspaces/isaac_ros-dev/ros_ws/src/vision': PYTHONPATH=/workspaces/isaac_ros-dev/ros_ws/build/vision/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspaces/isaac_ros-dev/ros_ws/install/vision/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/vision build --build-base /workspaces/isaac_ros-dev/ros_ws/build/vision/build install --record /workspaces/isaac_ros-dev/ros_ws/build/vision/install.log --single-version-externally-managed install_data --force
+[3.899s] running egg_info
+[3.928s] writing ../../build/vision/vision.egg-info/PKG-INFO
+[3.929s] writing dependency_links to ../../build/vision/vision.egg-info/dependency_links.txt
+[3.929s] writing entry points to ../../build/vision/vision.egg-info/entry_points.txt
+[3.929s] writing requirements to ../../build/vision/vision.egg-info/requires.txt
+[3.930s] writing top-level names to ../../build/vision/vision.egg-info/top_level.txt
+[4.064s] writing manifest file '../../build/vision/vision.egg-info/SOURCES.txt'
+[4.064s] running build
+[4.065s] running build_py
+[4.065s] running install
+[4.073s] running install_lib
+[4.103s] creating /workspaces/isaac_ros-dev/ros_ws/install/vision/lib/python3.10/site-packages/vision
+[4.103s] copying /workspaces/isaac_ros-dev/ros_ws/build/vision/build/lib/vision/__init__.py -> /workspaces/isaac_ros-dev/ros_ws/install/vision/lib/python3.10/site-packages/vision
+[4.103s] copying /workspaces/isaac_ros-dev/ros_ws/build/vision/build/lib/vision/vision_node.py -> /workspaces/isaac_ros-dev/ros_ws/install/vision/lib/python3.10/site-packages/vision
+[4.104s] byte-compiling /workspaces/isaac_ros-dev/ros_ws/install/vision/lib/python3.10/site-packages/vision/__init__.py to __init__.cpython-310.pyc
+[4.104s] byte-compiling /workspaces/isaac_ros-dev/ros_ws/install/vision/lib/python3.10/site-packages/vision/vision_node.py to vision_node.cpython-310.pyc
+[4.107s] running install_data
+[4.107s] copying resource/vision -> /workspaces/isaac_ros-dev/ros_ws/install/vision/share/ament_index/resource_index/packages
+[4.108s] copying package.xml -> /workspaces/isaac_ros-dev/ros_ws/install/vision/share/vision
+[4.108s] copying launch/vision.launch.py -> /workspaces/isaac_ros-dev/ros_ws/install/vision/share/vision/launch
+[4.108s] running install_egg_info
+[4.139s] Copying ../../build/vision/vision.egg-info to /workspaces/isaac_ros-dev/ros_ws/install/vision/lib/python3.10/site-packages/vision-0.0.0-py3.10.egg-info
+[4.140s] running install_scripts
+[4.255s] Installing vision_node script to /workspaces/isaac_ros-dev/ros_ws/install/vision/lib/vision
+[4.255s] writing list of installed files to '/workspaces/isaac_ros-dev/ros_ws/build/vision/install.log'
+[4.352s] Invoked command in '/workspaces/isaac_ros-dev/ros_ws/src/vision' returned '0': PYTHONPATH=/workspaces/isaac_ros-dev/ros_ws/build/vision/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspaces/isaac_ros-dev/ros_ws/install/vision/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/vision build --build-base /workspaces/isaac_ros-dev/ros_ws/build/vision/build install --record /workspaces/isaac_ros-dev/ros_ws/build/vision/install.log --single-version-externally-managed install_data --force

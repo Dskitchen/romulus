@@ -1,0 +1,37 @@
+running egg_info
+creating ../../build/pattern/pattern.egg-info
+writing ../../build/pattern/pattern.egg-info/PKG-INFO
+writing dependency_links to ../../build/pattern/pattern.egg-info/dependency_links.txt
+writing entry points to ../../build/pattern/pattern.egg-info/entry_points.txt
+writing requirements to ../../build/pattern/pattern.egg-info/requires.txt
+writing top-level names to ../../build/pattern/pattern.egg-info/top_level.txt
+writing manifest file '../../build/pattern/pattern.egg-info/SOURCES.txt'
+reading manifest file '../../build/pattern/pattern.egg-info/SOURCES.txt'
+writing manifest file '../../build/pattern/pattern.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /workspaces/isaac_ros-dev/ros_ws/build/pattern/build
+creating /workspaces/isaac_ros-dev/ros_ws/build/pattern/build/lib
+creating /workspaces/isaac_ros-dev/ros_ws/build/pattern/build/lib/pattern
+copying pattern/__init__.py -> /workspaces/isaac_ros-dev/ros_ws/build/pattern/build/lib/pattern
+copying pattern/pattern_node.py -> /workspaces/isaac_ros-dev/ros_ws/build/pattern/build/lib/pattern
+running install
+running install_lib
+creating /workspaces/isaac_ros-dev/ros_ws/install/pattern/lib/python3.10/site-packages/pattern
+copying /workspaces/isaac_ros-dev/ros_ws/build/pattern/build/lib/pattern/__init__.py -> /workspaces/isaac_ros-dev/ros_ws/install/pattern/lib/python3.10/site-packages/pattern
+copying /workspaces/isaac_ros-dev/ros_ws/build/pattern/build/lib/pattern/pattern_node.py -> /workspaces/isaac_ros-dev/ros_ws/install/pattern/lib/python3.10/site-packages/pattern
+byte-compiling /workspaces/isaac_ros-dev/ros_ws/install/pattern/lib/python3.10/site-packages/pattern/__init__.py to __init__.cpython-310.pyc
+byte-compiling /workspaces/isaac_ros-dev/ros_ws/install/pattern/lib/python3.10/site-packages/pattern/pattern_node.py to pattern_node.cpython-310.pyc
+running install_data
+creating /workspaces/isaac_ros-dev/ros_ws/install/pattern/share/ament_index
+creating /workspaces/isaac_ros-dev/ros_ws/install/pattern/share/ament_index/resource_index
+creating /workspaces/isaac_ros-dev/ros_ws/install/pattern/share/ament_index/resource_index/packages
+copying resource/pattern -> /workspaces/isaac_ros-dev/ros_ws/install/pattern/share/ament_index/resource_index/packages
+copying package.xml -> /workspaces/isaac_ros-dev/ros_ws/install/pattern/share/pattern
+creating /workspaces/isaac_ros-dev/ros_ws/install/pattern/share/pattern/launch
+copying launch/pattern.launch.py -> /workspaces/isaac_ros-dev/ros_ws/install/pattern/share/pattern/launch
+running install_egg_info
+Copying ../../build/pattern/pattern.egg-info to /workspaces/isaac_ros-dev/ros_ws/install/pattern/lib/python3.10/site-packages/pattern-0.0.1-py3.10.egg-info
+running install_scripts
+Installing pattern_node script to /workspaces/isaac_ros-dev/ros_ws/install/pattern/lib/pattern
+writing list of installed files to '/workspaces/isaac_ros-dev/ros_ws/build/pattern/install.log'

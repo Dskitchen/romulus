@@ -1,0 +1,4 @@
+source;share/cake_decorator/local_setup.bash
+source;share/cake_decorator/local_setup.dsv
+source;share/cake_decorator/local_setup.sh
+source;share/cake_decorator/local_setup.zsh

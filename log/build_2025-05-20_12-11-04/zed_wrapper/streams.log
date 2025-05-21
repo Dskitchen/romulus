@@ -1,0 +1,73 @@
+[0.029s] Invoking command in '/workspaces/isaac_ros-dev/ros_ws/build/zed_wrapper': CMAKE_PREFIX_PATH=/workspaces/isaac_ros-dev/ros_ws/install/zed_components:/workspaces/isaac_ros-dev/ros_ws/install/zed_msgs:/workspaces/isaac_ros-dev/ros_ws/install/zed_ros2:/workspaces/isaac_ros-dev/ros_ws/install/zed_wrapper:/workspaces/isaac_ros-dev/ros_ws/install/ur5e_visual_servo:/usr/local/libcudss-linux-0.3.0.9_cuda12-archive:/opt/ros/humble /usr/bin/cmake /workspaces/isaac_ros-dev/ros_ws/src/zed-ros2-wrapper/zed_wrapper -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/workspaces/isaac_ros-dev/ros_ws/install/zed_wrapper
+[0.131s] -- The C compiler identification is GNU 11.4.0
+[0.224s] -- The CXX compiler identification is GNU 11.4.0
+[0.239s] -- Detecting C compiler ABI info
+[0.354s] -- Detecting C compiler ABI info - done
+[0.367s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.368s] -- Detecting C compile features
+[0.368s] -- Detecting C compile features - done
+[0.375s] -- Detecting CXX compiler ABI info
+[0.508s] -- Detecting CXX compiler ABI info - done
+[0.534s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.534s] -- Detecting CXX compile features
+[0.536s] -- Detecting CXX compile features - done
+[0.548s] -- Found ament_cmake_auto: 1.3.11 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[1.794s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.918s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[2.252s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[2.264s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[2.281s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[2.303s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.333s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.415s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[2.421s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+[2.459s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[2.480s] -- Looking for pthread.h
+[2.608s] -- Looking for pthread.h - found
+[2.608s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[2.740s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[2.742s] -- Found Threads: TRUE  
+[3.148s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[3.150s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[3.150s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[3.439s] -- Configuring done
+[3.450s] -- Generating done
+[3.455s] -- Build files have been written to: /workspaces/isaac_ros-dev/ros_ws/build/zed_wrapper
+[3.472s] Invoked command in '/workspaces/isaac_ros-dev/ros_ws/build/zed_wrapper' returned '0': CMAKE_PREFIX_PATH=/workspaces/isaac_ros-dev/ros_ws/install/zed_components:/workspaces/isaac_ros-dev/ros_ws/install/zed_msgs:/workspaces/isaac_ros-dev/ros_ws/install/zed_ros2:/workspaces/isaac_ros-dev/ros_ws/install/zed_wrapper:/workspaces/isaac_ros-dev/ros_ws/install/ur5e_visual_servo:/usr/local/libcudss-linux-0.3.0.9_cuda12-archive:/opt/ros/humble /usr/bin/cmake /workspaces/isaac_ros-dev/ros_ws/src/zed-ros2-wrapper/zed_wrapper -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/workspaces/isaac_ros-dev/ros_ws/install/zed_wrapper
+[3.478s] Invoking command in '/workspaces/isaac_ros-dev/ros_ws/build/zed_wrapper': CMAKE_PREFIX_PATH=/workspaces/isaac_ros-dev/ros_ws/install/zed_components:/workspaces/isaac_ros-dev/ros_ws/install/zed_msgs:/workspaces/isaac_ros-dev/ros_ws/install/zed_ros2:/workspaces/isaac_ros-dev/ros_ws/install/zed_wrapper:/workspaces/isaac_ros-dev/ros_ws/install/ur5e_visual_servo:/usr/local/libcudss-linux-0.3.0.9_cuda12-archive:/opt/ros/humble /usr/bin/cmake --build /workspaces/isaac_ros-dev/ros_ws/build/zed_wrapper -- -j12 -l12
+[3.558s] Invoked command in '/workspaces/isaac_ros-dev/ros_ws/build/zed_wrapper' returned '0': CMAKE_PREFIX_PATH=/workspaces/isaac_ros-dev/ros_ws/install/zed_components:/workspaces/isaac_ros-dev/ros_ws/install/zed_msgs:/workspaces/isaac_ros-dev/ros_ws/install/zed_ros2:/workspaces/isaac_ros-dev/ros_ws/install/zed_wrapper:/workspaces/isaac_ros-dev/ros_ws/install/ur5e_visual_servo:/usr/local/libcudss-linux-0.3.0.9_cuda12-archive:/opt/ros/humble /usr/bin/cmake --build /workspaces/isaac_ros-dev/ros_ws/build/zed_wrapper -- -j12 -l12
+[3.560s] Invoking command in '/workspaces/isaac_ros-dev/ros_ws/build/zed_wrapper': CMAKE_PREFIX_PATH=/workspaces/isaac_ros-dev/ros_ws/install/zed_components:/workspaces/isaac_ros-dev/ros_ws/install/zed_msgs:/workspaces/isaac_ros-dev/ros_ws/install/zed_ros2:/workspaces/isaac_ros-dev/ros_ws/install/zed_wrapper:/workspaces/isaac_ros-dev/ros_ws/install/ur5e_visual_servo:/usr/local/libcudss-linux-0.3.0.9_cuda12-archive:/opt/ros/humble /usr/bin/cmake --install /workspaces/isaac_ros-dev/ros_ws/build/zed_wrapper
+[3.572s] -- Install configuration: ""
+[3.573s] -- Execute custom install script
+[3.574s] -- Symlinking: /workspaces/isaac_ros-dev/ros_ws/install/zed_wrapper/share/zed_wrapper/config/common_mono.yaml
+[3.590s] -- Symlinking: /workspaces/isaac_ros-dev/ros_ws/install/zed_wrapper/share/zed_wrapper/config/common_stereo.yaml
+[3.605s] -- Symlinking: /workspaces/isaac_ros-dev/ros_ws/install/zed_wrapper/share/zed_wrapper/config/ffmpeg.yaml
+[3.619s] -- Symlinking: /workspaces/isaac_ros-dev/ros_ws/install/zed_wrapper/share/zed_wrapper/config/virtual.yaml
+[3.635s] -- Symlinking: /workspaces/isaac_ros-dev/ros_ws/install/zed_wrapper/share/zed_wrapper/config/zed.yaml
+[3.653s] -- Symlinking: /workspaces/isaac_ros-dev/ros_ws/install/zed_wrapper/share/zed_wrapper/config/zed2.yaml
+[3.670s] -- Symlinking: /workspaces/isaac_ros-dev/ros_ws/install/zed_wrapper/share/zed_wrapper/config/zed2i.yaml
+[3.687s] -- Symlinking: /workspaces/isaac_ros-dev/ros_ws/install/zed_wrapper/share/zed_wrapper/config/zedm.yaml
+[3.704s] -- Symlinking: /workspaces/isaac_ros-dev/ros_ws/install/zed_wrapper/share/zed_wrapper/config/zedx.yaml
+[3.720s] -- Symlinking: /workspaces/isaac_ros-dev/ros_ws/install/zed_wrapper/share/zed_wrapper/config/zedxm.yaml
+[3.737s] -- Symlinking: /workspaces/isaac_ros-dev/ros_ws/install/zed_wrapper/share/zed_wrapper/config/zedxone4k.yaml
+[3.754s] -- Symlinking: /workspaces/isaac_ros-dev/ros_ws/install/zed_wrapper/share/zed_wrapper/config/zedxonegs.yaml
+[3.770s] -- Symlinking: /workspaces/isaac_ros-dev/ros_ws/install/zed_wrapper/share/zed_wrapper/urdf/include/materials.urdf.xacro
+[3.784s] -- Symlinking: /workspaces/isaac_ros-dev/ros_ws/install/zed_wrapper/share/zed_wrapper/urdf/zed_descr.urdf.xacro
+[3.798s] -- Symlinking: /workspaces/isaac_ros-dev/ros_ws/install/zed_wrapper/share/zed_wrapper/urdf/zed_macro.urdf.xacro
+[3.812s] -- Symlinking: /workspaces/isaac_ros-dev/ros_ws/install/zed_wrapper/share/zed_wrapper/launch/zed_camera.launch.py
+[3.828s] -- Symlinking: /workspaces/isaac_ros-dev/ros_ws/install/zed_wrapper/share/ament_index/resource_index/package_run_dependencies/zed_wrapper
+[3.850s] -- Symlinking: /workspaces/isaac_ros-dev/ros_ws/install/zed_wrapper/share/ament_index/resource_index/parent_prefix_path/zed_wrapper
+[3.868s] -- Symlinking: /workspaces/isaac_ros-dev/ros_ws/install/zed_wrapper/share/zed_wrapper/environment/ament_prefix_path.sh
+[3.884s] -- Symlinking: /workspaces/isaac_ros-dev/ros_ws/install/zed_wrapper/share/zed_wrapper/environment/ament_prefix_path.dsv
+[3.901s] -- Symlinking: /workspaces/isaac_ros-dev/ros_ws/install/zed_wrapper/share/zed_wrapper/environment/path.sh
+[3.919s] -- Symlinking: /workspaces/isaac_ros-dev/ros_ws/install/zed_wrapper/share/zed_wrapper/environment/path.dsv
+[3.936s] -- Symlinking: /workspaces/isaac_ros-dev/ros_ws/install/zed_wrapper/share/zed_wrapper/local_setup.bash
+[3.952s] -- Symlinking: /workspaces/isaac_ros-dev/ros_ws/install/zed_wrapper/share/zed_wrapper/local_setup.sh
+[3.973s] -- Symlinking: /workspaces/isaac_ros-dev/ros_ws/install/zed_wrapper/share/zed_wrapper/local_setup.zsh
+[3.991s] -- Symlinking: /workspaces/isaac_ros-dev/ros_ws/install/zed_wrapper/share/zed_wrapper/local_setup.dsv
+[4.006s] -- Symlinking: /workspaces/isaac_ros-dev/ros_ws/install/zed_wrapper/share/zed_wrapper/package.dsv
+[4.022s] -- Symlinking: /workspaces/isaac_ros-dev/ros_ws/install/zed_wrapper/share/ament_index/resource_index/packages/zed_wrapper
+[4.038s] -- Symlinking: /workspaces/isaac_ros-dev/ros_ws/install/zed_wrapper/share/zed_wrapper/cmake/zed_wrapperConfig.cmake
+[4.053s] -- Symlinking: /workspaces/isaac_ros-dev/ros_ws/install/zed_wrapper/share/zed_wrapper/cmake/zed_wrapperConfig-version.cmake
+[4.071s] -- Symlinking: /workspaces/isaac_ros-dev/ros_ws/install/zed_wrapper/share/zed_wrapper/package.xml
+[4.095s] Invoked command in '/workspaces/isaac_ros-dev/ros_ws/build/zed_wrapper' returned '0': CMAKE_PREFIX_PATH=/workspaces/isaac_ros-dev/ros_ws/install/zed_components:/workspaces/isaac_ros-dev/ros_ws/install/zed_msgs:/workspaces/isaac_ros-dev/ros_ws/install/zed_ros2:/workspaces/isaac_ros-dev/ros_ws/install/zed_wrapper:/workspaces/isaac_ros-dev/ros_ws/install/ur5e_visual_servo:/usr/local/libcudss-linux-0.3.0.9_cuda12-archive:/opt/ros/humble /usr/bin/cmake --install /workspaces/isaac_ros-dev/ros_ws/build/zed_wrapper

@@ -1,0 +1,17 @@
+package.xml
+setup.cfg
+setup.py
+../../build/pattern/pattern.egg-info/PKG-INFO
+../../build/pattern/pattern.egg-info/SOURCES.txt
+../../build/pattern/pattern.egg-info/dependency_links.txt
+../../build/pattern/pattern.egg-info/entry_points.txt
+../../build/pattern/pattern.egg-info/requires.txt
+../../build/pattern/pattern.egg-info/top_level.txt
+../../build/pattern/pattern.egg-info/zip-safe
+launch/pattern.launch.py
+pattern/__init__.py
+pattern/pattern_node.py
+resource/pattern
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py
