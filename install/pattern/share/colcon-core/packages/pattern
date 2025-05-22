@@ -1,1 +1,1 @@
-geometry_msgs:python3-numpy:python3-svgpathtools:rclpy:std_msgs:visualization_msgs
+cake_interfaces:geometry_msgs:python3-numpy:python3-svgpathtools:rclpy:std_msgs:visualization_msgs

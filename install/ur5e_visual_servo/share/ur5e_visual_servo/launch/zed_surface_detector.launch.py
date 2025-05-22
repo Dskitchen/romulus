@@ -1,1 +1,0 @@
-/workspaces/isaac_ros-dev/ros_ws/src/ur5e_visual_servo/launch/zed_surface_detector.launch.py

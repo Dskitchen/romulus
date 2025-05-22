@@ -1,2 +1,1 @@
-source;share/cake_decorator/environment/ament_prefix_path.sh
-source;share/cake_decorator/environment/path.sh
+/workspaces/isaac_ros-dev/ros_ws/build/cake_decorator/ament_cmake_environment_hooks/local_setup.dsv

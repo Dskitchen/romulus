@@ -1,2 +1,0 @@
-Invoking command in '/workspaces/isaac_ros-dev/ros_ws/build/ur5e_visual_servo': /usr/bin/cmake /workspaces/isaac_ros-dev/ros_ws/src/ur5e_visual_servo -DCMAKE_INSTALL_PREFIX=/workspaces/isaac_ros-dev/ros_ws/install/ur5e_visual_servo
-Invoked command in '/workspaces/isaac_ros-dev/ros_ws/build/ur5e_visual_servo' returned '1': /usr/bin/cmake /workspaces/isaac_ros-dev/ros_ws/src/ur5e_visual_servo -DCMAKE_INSTALL_PREFIX=/workspaces/isaac_ros-dev/ros_ws/install/ur5e_visual_servo
