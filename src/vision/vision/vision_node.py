@@ -17,30 +17,17 @@ class VisionNode(Node):
     def __init__(self):
         super().__init__('vision_node')
         
-        # Parameters
+        # Parameters for plane detection
         self.declare_parameter('max_surface_angle', 95.0)
         self.declare_parameter('min_surface_area', 0.00005)
         self.declare_parameter('max_surface_area', 0.05)
         self.declare_parameter('plane_distance_threshold', 0.02)
         self.declare_parameter('camera_resolution', 'SVGA')
-        self.declare_parameter('cake_hue_min', 10)  # Example for beige cake
-        self.declare_parameter('cake_hue_max', 30)
-        self.declare_parameter('cake_sat_min', 50)
-        self.declare_parameter('cake_sat_max', 255)
-        self.declare_parameter('cake_val_min', 50)
-        self.declare_parameter('cake_val_max', 255)
         
         self.max_surface_angle = self.get_parameter('max_surface_angle').value
         self.min_surface_area = self.get_parameter('min_surface_area').value
         self.max_surface_area = self.get_parameter('max_surface_area').value
         self.plane_distance_threshold = self.get_parameter('plane_distance_threshold').value
-        self.cake_hue_min = self.get_parameter('cake_hue_min').value
-        self.cake_hue_max = self.get_parameter('cake_hue_max').value
-        self.cake_sat_min = self.get_parameter('cake_sat_min').value
-        self.cake_sat_max = self.get_parameter('cake_sat_max').value
-        self.cake_val_min = self.get_parameter('cake_val_min').value
-        self.cake_val_max = self.get_parameter('cake_val_max').value
-        camera_resolution = self.get_parameter('camera_resolution').value
         
         # CvBridge for image conversion
         self.bridge = CvBridge()
@@ -50,6 +37,7 @@ class VisionNode(Node):
         self.shape_type_pub = self.create_publisher(String, '/cake_vision/shape_type', 10)
         self.marker_pub = self.create_publisher(Marker, '/cake_vision/surface_marker', 10)
         self.image_pub = self.create_publisher(Image, '/cake_vision/processed_image', 10)
+        self.mask_pub = self.create_publisher(Image, '/cake_vision/debug_mask', 10)
         
         # Subscribers
         self.pc_sub = self.create_subscription(
@@ -88,10 +76,10 @@ class VisionNode(Node):
         self.latest_image = None
         self.latest_image_msg = None
         self.selected_pattern = None
-        self.pattern_points = []  # List of (u, v) points in image coordinates
+        self.pattern_points = []
         
         # Camera intrinsics
-        self.left_intrinsics = {'fx': 734.1024780273438, 'fy': 734.1024780273438, 'cx': 986.13525390625, 'cy': 587.7171630859375}
+        self.left_intrinsics = {'fx': 734.5239868164062, 'fy': 734.5239868164062, 'cx': 986.1362915039062, 'cy': 587.7181396484375}
         
         # Timer for periodic detection
         self.timer = self.create_timer(0.1, self.detect_surfaces)
@@ -131,57 +119,171 @@ class VisionNode(Node):
             self.get_logger().warn("Waiting for point cloud and image data")
             return
         
-        # Step 1: Color-based segmentation in HSV space
         try:
+            # Step 1: Color-based segmentation for white, pink, brown, and red
             hsv = cv2.cvtColor(self.latest_image, cv2.COLOR_BGR2HSV)
-            lower_bound = np.array([self.cake_hue_min, self.cake_sat_min, self.cake_val_min])
-            upper_bound = np.array([self.cake_hue_max, self.cake_sat_max, self.cake_val_max])
-            mask = cv2.inRange(hsv, lower_bound, upper_bound)
+            
+            # Define HSV ranges for white, pink, brown, and red
+            # White: High value, low saturation
+            white_lower = np.array([0, 0, 200])
+            white_upper = np.array([180, 50, 255])
+            # Pink: Hue around 330-360/0-10, medium saturation
+            pink_lower1 = np.array([0, 50, 100])
+            pink_upper1 = np.array([10, 255, 255])
+            pink_lower2 = np.array([165, 50, 100])
+            pink_upper2 = np.array([180, 255, 255])
+            # Brown: Hue around 10-30, medium saturation
+            brown_lower = np.array([10, 50, 50])
+            brown_upper = np.array([30, 255, 200])
+            # Red: Hue around 0-10 and 165-180, high saturation
+            red_lower1 = np.array([0, 100, 100])
+            red_upper1 = np.array([10, 255, 255])
+            red_lower2 = np.array([165, 100, 100])
+            red_upper2 = np.array([180, 255, 255])
+            
+            # Create masks for each color
+            mask_white = cv2.inRange(hsv, white_lower, white_upper)
+            mask_pink1 = cv2.inRange(hsv, pink_lower1, pink_upper1)
+            mask_pink2 = cv2.inRange(hsv, pink_lower2, pink_upper2)
+            mask_pink = cv2.bitwise_or(mask_pink1, mask_pink2)
+            mask_brown = cv2.inRange(hsv, brown_lower, brown_upper)
+            mask_red1 = cv2.inRange(hsv, red_lower1, red_upper1)
+            mask_red2 = cv2.inRange(hsv, red_lower2, red_upper2)
+            mask_red = cv2.bitwise_or(mask_red1, mask_red2)
+            
+            # Combine masks
+            mask = cv2.bitwise_or(mask_white, mask_pink)
+            mask = cv2.bitwise_or(mask, mask_brown)
+            mask = cv2.bitwise_or(mask, mask_red)
             
             # Apply morphological operations to reduce noise
             kernel = np.ones((5, 5), np.uint8)
             mask = cv2.morphologyEx(mask, cv2.MORPH_OPEN, kernel)
             
-            # Step 2: Find contours in the mask
+            # Debug: Log pixel counts in the mask
+            total_pixels = mask.size
+            white_pixels = np.sum(mask == 255)
+            self.get_logger().debug(f"Mask pixel stats: {white_pixels}/{total_pixels} pixels are white ({(white_pixels/total_pixels)*100:.2f}%)")
+            
+            # Debug: Save and publish the mask
+            timestamp = int(self.get_clock().now().nanoseconds / 1e9)
+            cv2.imwrite(f"/workspaces/isaac_ros-dev/ros_ws/debug_mask_{timestamp}.png", mask)
+            mask_msg = self.bridge.cv2_to_imgmsg(mask, "mono8")
+            mask_msg.header.stamp = self.get_clock().now().to_msg()
+            mask_msg.header.frame_id = "zed_left_camera_optical_frame"
+            self.mask_pub.publish(mask_msg)
+            
+            # Step 2: Detect shapes (circles and rectangles)
+            debug_image = self.latest_image.copy()
             contours, _ = cv2.findContours(mask, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
             
             if not contours:
                 self.get_logger().warn("No contours detected after color segmentation")
                 return
             
-            # Filter contours by area (approximate pixel area for 230 mm cake)
-            expected_area_pixels = 5000  # Adjusted based on trial
+            self.get_logger().debug(f"Found {len(contours)} contours")
+            
+            # Expected sizes in pixels (approximate, based on ZED X resolution and cake sizes)
+            expected_areas = {
+                '6_inch_round': 3000,  # 6-inch round cake
+                '8_inch_round': 5000,  # 8-inch round cake
+                '10_inch_round': 8000,  # 10-inch round cake
+                '10x13_rect': 10000,   # 10x13-inch rectangular cake
+                '20x26_rect': 40000    # 20x26-inch rectangular cake
+            }
+            
             best_contour = None
-            max_area = 0
-            for contour in contours:
+            best_shape = None
+            min_area_diff = float('inf')
+            
+            for i, contour in enumerate(contours):
                 area = cv2.contourArea(contour)
-                if 0.5 * expected_area_pixels < area < 2 * expected_area_pixels:
-                    if area > max_area:
-                        max_area = area
+                if area < 1000:  # Ignore small noise
+                    continue
+                
+                # Compute circularity
+                perimeter = cv2.arcLength(contour, True)
+                if perimeter == 0:
+                    continue
+                circularity = 4 * math.pi * area / (perimeter ** 2)
+                
+                # Determine shape
+                shape_type = None
+                if circularity > 0.85:  # Stricter circularity threshold
+                    (x, y), radius = cv2.minEnclosingCircle(contour)
+                    if radius < 60:
+                        shape_type = '6_inch_round'
+                    elif radius < 80:
+                        shape_type = '8_inch_round'
+                    else:
+                        shape_type = '10_inch_round'
+                else:
+                    # Approximate the contour to a polygon
+                    epsilon = 0.02 * cv2.arcLength(contour, True)
+                    approx = cv2.approxPolyDP(contour, epsilon, True)
+                    if len(approx) == 4:  # Rectangle
+                        x, y, w, h = cv2.boundingRect(contour)
+                        aspect_ratio = float(w) / h
+                        if 0.7 <= aspect_ratio <= 1.3:
+                            shape_type = '10x13_rect'
+                        elif 1.8 <= aspect_ratio <= 2.2:
+                            shape_type = '20x26_rect'
+                
+                if shape_type:
+                    self.get_logger().debug(f"Contour {i}: area={area}, shape={shape_type}, circularity={circularity:.2f}")
+                    area_diff = abs(area - expected_areas[shape_type])
+                    if area_diff < min_area_diff:
+                        min_area_diff = area_diff
                         best_contour = contour
+                        best_shape = shape_type
             
             if best_contour is None:
-                self.get_logger().warn("No contours match the expected area")
+                self.get_logger().warn("No suitable shapes found")
                 return
             
-            # Step 3: Compute bounding box for the contour
+            self.get_logger().debug(f"Selected {best_shape} with area difference {min_area_diff}")
+            
+            # Draw the selected contour and bounding box on the debug image
+            cv2.drawContours(debug_image, [best_contour], -1, (0, 255, 0), 2)
             x, y, w, h = cv2.boundingRect(best_contour)
+            cv2.rectangle(debug_image, (x, y), (x+w, y+h), (255, 0, 0), 2)
+            cv2.putText(debug_image, best_shape, (x, y-10), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 0, 0), 2)
+            
+            # Publish and save the debug image
+            try:
+                cv2.imwrite(f"/workspaces/isaac_ros-dev/ros_ws/processed_image_{timestamp}.png", debug_image)
+                image_msg = self.bridge.cv2_to_imgmsg(debug_image, "bgr8")
+                image_msg.header.stamp = self.get_clock().now().to_msg()
+                image_msg.header.frame_id = "zed_left_camera_optical_frame"
+                self.image_pub.publish(image_msg)
+            except Exception as e:
+                self.get_logger().error(f"Error publishing debug image: {str(e)}")
+            
+            # Step 3: Map the bounding box to the point cloud
             u_min = x
             u_max = x + w
             v_min = y
             v_max = y + h
+            self.get_logger().debug(f"Bounding box: u_min={u_min}, u_max={u_max}, v_min={v_min}, v_max={v_max}")
             
-            # Step 4: Map the bounding box to the point cloud
             points_gen = pc2.read_points(self.latest_point_cloud, field_names=("x", "y", "z", "rgb"), skip_nans=True)
             points_list = []
+            invalid_points = 0
+            total_points = 0
             for p in points_gen:
+                total_points += 1
                 x, y, z, rgb = p
                 if z <= 0:
+                    invalid_points += 1
                     continue
                 u = (x * self.left_intrinsics['fx'] / z) + self.left_intrinsics['cx']
                 v = (y * self.left_intrinsics['fy'] / z) + self.left_intrinsics['cy']
-                if u_min <= u <= u_max and v_min <= v <= v_max:
+                padding = 20
+                if (u_min - padding) <= u <= (u_max + padding) and (v_min - padding) <= v <= (v_max + padding):
                     points_list.append((x, y, z))
+            
+            self.get_logger().debug(f"Total points in point cloud: {total_points}, Invalid points (z <= 0): {invalid_points}")
+            self.get_logger().debug(f"Found {len(points_list)} points in the cropped point cloud (invalid points skipped: {invalid_points})")
             
             if len(points_list) < 5:
                 self.get_logger().warn("Not enough points in the cropped point cloud")
@@ -190,7 +292,7 @@ class VisionNode(Node):
             points = np.array(points_list, dtype=np.float32)
             self.get_logger().debug(f"Cropped point cloud points shape: {points.shape}")
             
-            # Step 5: RANSAC plane detection on cropped points
+            # Step 4: RANSAC plane detection on cropped points
             pcd = o3d.geometry.PointCloud()
             pcd.points = o3d.utility.Vector3dVector(points)
             
@@ -235,8 +337,8 @@ class VisionNode(Node):
                 self.get_logger().info(f"Plane area {area_m2:.4f}m² outside constraints [{self.min_surface_area}, {self.max_surface_area}]")
                 return
             
-            # Step 6: Classify shape as cylinder or box
-            shape_type = self.determine_shape_type(best_contour)
+            # Step 5: Classify shape (already done)
+            shape_type = best_shape
             
             center = np.mean(plane_points, axis=0)
             self.get_logger().debug(f"Plane center: {center}")
@@ -250,44 +352,10 @@ class VisionNode(Node):
             }
             
             self.get_logger().info(f"Detected plane: area={area_m2:.4f}m², shape={shape_type}")
-            self.publish_surface(plane_info, self.latest_image.copy())
+            self.publish_surface(plane_info, debug_image)
         
         except Exception as e:
             self.get_logger().error(f"Error in surface detection: {str(e)}")
-    
-    def determine_shape_type(self, contour):
-        perimeter = cv2.arcLength(contour, True)
-        area = cv2.contourArea(contour)
-        
-        if area == 0 or perimeter == 0:
-            self.get_logger().warn("Zero contour area or perimeter")
-            return "unknown"
-        
-        circularity = 4 * math.pi * area / (perimeter * perimeter)
-        
-        # Fit an ellipse if possible
-        if len(contour) >= 5:
-            ellipse = cv2.fitEllipse(contour)
-            ellipse_ratio = min(ellipse[1][0], ellipse[1][1]) / max(ellipse[1][0], ellipse[1][1])
-        else:
-            ellipse_ratio = 0
-            self.get_logger().debug("Not enough points for ellipse fitting")
-        
-        # Fit a rectangle
-        rect = cv2.minAreaRect(contour)
-        rect_area = rect[1][0] * rect[1][1]
-        rect_ratio = min(rect[1][0], rect[1][1]) / max(rect[1][0], rect[1][1])
-        
-        self.get_logger().debug(
-            f"Shape analysis: circularity={circularity:.2f}, ellipse_ratio={ellipse_ratio:.2f}, "
-            f"rect_ratio={rect_ratio:.2f}, area_ratio={area/rect_area if rect_area else 0:.2f}"
-        )
-        
-        if circularity > 0.6 and ellipse_ratio > 0.6:
-            return "cylinder"
-        elif rect_area and area / rect_area > 0.65 and rect_ratio < 0.9:
-            return "box"
-        return "unknown"
     
     def publish_surface(self, plane, image):
         polygon_msg = PolygonStamped()
@@ -317,9 +385,9 @@ class VisionNode(Node):
         marker.type = Marker.TRIANGLE_LIST
         marker.action = Marker.ADD
         
-        marker.color.r = 1.0 if plane['shape_type'] == "cylinder" else 0.0
+        marker.color.r = 1.0 if "round" in plane['shape_type'] else 0.0
         marker.color.g = 0.0
-        marker.color.b = 0.0 if plane['shape_type'] == "cylinder" else 1.0
+        marker.color.b = 0.0 if "round" in plane['shape_type'] else 1.0
         marker.color.a = 0.7
         marker.scale.x = marker.scale.y = marker.scale.z = 1.0
         
@@ -366,7 +434,7 @@ class VisionNode(Node):
             cv2.putText(image, f"Area: {plane['area']:.3f} m²", (cx + 10, cy + 20),
                         cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 255), 2)
             
-            # Overlay pattern points if available, translated to plane center
+            # Overlay pattern points if available
             if self.pattern_points:
                 translated_points = []
                 for u, v in self.pattern_points:

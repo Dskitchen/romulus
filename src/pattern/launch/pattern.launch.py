@@ -17,12 +17,12 @@ def generate_launch_description():
                 'max_surface_area': 0.05,
                 'plane_distance_threshold': 0.02,
                 'camera_resolution': 'SVGA',
-                'cake_hue_min': 33,  # Replace with your values
-                'cake_hue_max': 177,
-                'cake_sat_min': 000,
-                'cake_sat_max': 255,
-                'cake_val_min': 139,
-                'cake_val_max': 219
+                'cake_hue_min': 175,  # Replace with your values
+                'cake_hue_max': 181,
+                'cake_sat_min': 130,
+                'cake_sat_max': 170,
+                'cake_val_min': 180,
+                'cake_val_max': 215
             }]
         ),
         Node(

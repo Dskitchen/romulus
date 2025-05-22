@@ -9,7 +9,6 @@ prefix_override/sitecustomize.py
 prefix_override/__pycache__/sitecustomize.cpython-310.pyc
 resource/vision
 vision/__init__.py
-vision/hsv_tuner.py
 vision/vision_node.py
 vision.egg-info/PKG-INFO
 vision.egg-info/SOURCES.txt

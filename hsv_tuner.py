@@ -1,12 +1,19 @@
 #!/usr/bin/env python3
 import cv2
 import numpy as np
+import time
 
 def nothing(x):
     pass
 
-# Load an image (replace with a saved image from your camera)
-image = cv2.imread("cake_image.jpg")  # Replace with your image path
+def mouse_callback(event, x, y, flags, param):
+    if event == cv2.EVENT_LBUTTONDOWN:
+        hsv = param
+        h, s, v = hsv[y, x]
+        print(f"HSV at ({x}, {y}): Hue={h}, Sat={s}, Val={v}")
+
+# Load an image
+image = cv2.imread("cake_image.jpg")
 if image is None:
     print("Error: Could not load image")
     exit()
@@ -19,6 +26,17 @@ hsv = cv2.cvtColor(image, cv2.COLOR_BGR2HSV)
 
 # Create a window
 cv2.namedWindow("Trackbars")
+cv2.namedWindow("Original")
+cv2.namedWindow("Mask")
+cv2.namedWindow("Result")
+
+# Small delay to ensure windows are created
+time.sleep(0.1)
+
+# Verify window creation
+if cv2.getWindowProperty("Original", cv2.WND_PROP_VISIBLE) < 1:
+    print("Error: Failed to create 'Original' window")
+    exit()
 
 # Create trackbars for HSV tuning
 cv2.createTrackbar("Hue Min", "Trackbars", 0, 179, nothing)
@@ -27,6 +45,9 @@ cv2.createTrackbar("Sat Min", "Trackbars", 0, 255, nothing)
 cv2.createTrackbar("Sat Max", "Trackbars", 255, 255, nothing)
 cv2.createTrackbar("Val Min", "Trackbars", 0, 255, nothing)
 cv2.createTrackbar("Val Max", "Trackbars", 255, 255, nothing)
+
+# Set mouse callback
+cv2.setMouseCallback("Original", mouse_callback, hsv)
 
 while True:
     h_min = cv2.getTrackbarPos("Hue Min", "Trackbars")
