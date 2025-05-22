@@ -1,6 +1,11 @@
-/install
-/build
-/log
-/src/ur5e_visual_servo_backup.tar.gz
-/src/zed-ros2-wrapper
-/src/zed-ros2-interfaces
+# ROS2 build artifacts
+build/
+install/
+log/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Miscellaneous
+*.log
